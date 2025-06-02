@@ -14,7 +14,7 @@ ${INVALID_PASSWORD}   000000
 Login Com Sucesso
     Open Browser    ${LOGIN_PAGE}    ${BROWSER}
     Input Text      id=username      ${VALID_USER}
-    Input Text      id=password      ${VALID_PASSWORD}
+    Input Text      id=passwor      ${VALID_PASSWORD}
     Click Button    xpath=//button
     Sleep           1s
     Location Should Contain    dashboard.html
