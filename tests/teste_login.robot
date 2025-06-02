@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${LOGIN_PAGE}         http://localhost:8080/index.html
+${LOGIN_PAGE}         http://localhost:5500/index.html
 ${BROWSER}            chrome
 ${VALID_USER}         admin
 ${VALID_PASSWORD}     123456
@@ -14,7 +14,7 @@ ${INVALID_PASSWORD}   000000
 Login Com Sucesso
     Open Browser    ${LOGIN_PAGE}    ${BROWSER}
     Input Text      id=username      ${VALID_USER}
-    Input Text      id=passwor      ${VALID_PASSWORD}
+    Input Text      id=password      ${VALID_PASSWORD}
     Click Button    xpath=//button
     Sleep           1s
     Location Should Contain    dashboard.html
